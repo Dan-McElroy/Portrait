@@ -71,6 +71,11 @@ input[type="button"] {
   color: #BB86FC;
   border-color: transparent;
   text-decoration: underline;
+  font-size: 1.75em;
+}
+
+a {
+  color: #BB86FC;
 }
 
 .footer {
