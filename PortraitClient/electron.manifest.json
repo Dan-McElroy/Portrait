@@ -1,14 +1,14 @@
 {
-  "executable": "WebApplication",
+  "executable": "Portrait",
   "splashscreen": {
     "imageFile": ""
   },
-  "name": "WebApplication",
+  "name": "Portrait",
   "author": "Dan McElroy",
   "singleInstance": false,
   "build": {
-    "appId": "com.webapplication.app",
-    "productName": "WebApplication",
+    "appId": "com.portrait.app",
+    "productName": "Portrait",
     "copyright": "Copyright © 2020",
     "buildVersion": "1.0.0",
     "compression": "maximum",

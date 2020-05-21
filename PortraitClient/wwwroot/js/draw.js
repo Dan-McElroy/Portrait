@@ -5,8 +5,8 @@
     currY = 0,
     dot_flag = false;
 
-var x = "black",
-    y = 2;
+var drawColor = "#BB86FC",
+    lineWidth = 2;
 
 function init() {
     canvas = document.getElementById('canvas');
@@ -35,29 +35,29 @@ function init() {
 function color(obj) {
     switch (obj.id) {
         case "green":
-            x = "green";
+            drawColor = "green";
             break;
         case "blue":
-            x = "blue";
+            drawColor = "blue";
             break;
         case "red":
-            x = "red";
+            drawColor = "red";
             break;
         case "yellow":
-            x = "yellow";
+            drawColor = "yellow";
             break;
         case "orange":
-            x = "orange";
+            drawColor = "orange";
             break;
         case "black":
-            x = "black";
+            drawColor = "black";
             break;
         case "white":
-            x = "white";
+            drawColor = "white";
             break;
     }
-    if (x == "white") y = 14;
-    else y = 2;
+    if (drawColor == "white") lineWidth = 14;
+    else lineWidth = 2;
 
 }
 
@@ -65,8 +65,8 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
-    ctx.strokeStyle = x;
-    ctx.lineWidth = y;
+    ctx.strokeStyle = drawColor;
+    ctx.lineWidth = lineWidth;
     ctx.stroke();
     ctx.closePath();
 }
@@ -106,7 +106,7 @@ function findxy(res, e) {
         dot_flag = true;
         if (dot_flag) {
             ctx.beginPath();
-            ctx.fillStyle = x;
+            ctx.fillStyle = drawColor;
             ctx.fillRect(currX, currY, 2, 2);
             ctx.closePath();
             dot_flag = false;
