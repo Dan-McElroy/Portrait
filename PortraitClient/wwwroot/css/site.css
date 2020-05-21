@@ -59,11 +59,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-
   background-color: #121212;
   color: #BB86FC;
+  overflow: hidden;
 }
 
 input[type="button"] {
