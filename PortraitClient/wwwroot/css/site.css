@@ -69,7 +69,8 @@ body {
 input[type="button"] {
   background-color: #121212;
   color: #BB86FC;
-  border-color: #BB86FC;
+  border-color: transparent;
+  text-decoration: underline;
 }
 
 .footer {

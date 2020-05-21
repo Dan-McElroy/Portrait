@@ -1,3 +1,25 @@
-﻿#canvas {
+﻿body {
+    margin-bottom: 0;
+}
 
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="button"] {
+    position: absolute;
+    top: 10%;
+    width: 100px;
+}
+
+#save {
+    left: 40%;
+    margin-left: -50px;
+}
+
+#clear {
+    right: 40%;
+    margin-right: -50px;
 }

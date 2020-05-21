@@ -5,15 +5,15 @@
     currY = 0,
     dot_flag = false;
 
-var drawColor = "#BB86FC",
-    lineWidth = 2;
+var drawColor = "white",
+    lineWidth = 3;
 
 function init() {
     canvas = document.getElementById('canvas');
     ctx = canvas.getContext("2d");
 
     canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
+    canvas.height = window.innerHeight;
 
     w = canvas.width;
     h = canvas.height;
@@ -72,11 +72,7 @@ function draw() {
 }
 
 function erase() {
-    var m = confirm("Want to clear");
-    if (m) {
-        ctx.clearRect(0, 0, w, h);
-        document.getElementById("canvasimg").style.display = "none";
-    }
+    ctx.clearRect(0, 0, w, h);
 }
 
 function save() {
